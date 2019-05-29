@@ -49,11 +49,19 @@ html, body {
   display: none;
 
   .video {
+    padding-right: 30px;
     position: absolute;
     z-index: 99999999;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    p {
+      white-space: pre-line;
+      color: #fff;
+      line-height: 18px;
+      height: 100px;
+      overflow-y: scroll;
+    }
   }
 
   .close {
@@ -77,6 +85,9 @@ nav {
   color: #fff;
   width: 1170px;
   margin: 0 auto;
+  position: absolute;
+  top: 0;
+  z-index: 999;
 
   ul.menu {
     display: inline-block;
@@ -104,17 +115,21 @@ nav {
     }
   }
 }
+
+.bg-pegada {
+  background: url('../images/pegada-bg.png') #000;
+  background-position: 50px 30%;
+  background-repeat: no-repeat;
+  background-size: 1200px;
+}
+
 #header {
-  padding-top: 150px;
+  padding-top: 200px;
   padding-bottom: 100px;
   box-sizing: border-box;
-  background: url('../images/pegada-bg.png') #000;
-  background-position: 50px center;
-  background-repeat: no-repeat;
-  background-size: 900px;
   width: 100%;
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
 
   .blocks {
     background-color: $pink;
@@ -143,34 +158,42 @@ nav {
 
 
   .logo {
-    width: 300px;
+    width: 400px;
     display: block;
     margin: 0 auto;
   }
 
-  .about {
+}
+
+#about {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 200px;
+  box-sizing: border-box;
+  img {
     width: 500px;
     margin: 0 auto;
-    margin-top: 200px;
-    img {
-      width: 100%;
-    }
+    display: block;
+  }
 
-    .manifest {
-      margin-left: 150px;
-      padding-left: 10px;
-      border-left: 3px solid #fff;
-      color: $pink;
-      margin-top: 50px;
-      h3, p {
-        margin: 0;
-        padding: 0;
-        font-size: 16px;
-        line-height: 16px;
-      }
+  .manifest {
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+    padding-left: 10px;
+    border-left: 3px solid #fff;
+    color: $pink;
+    margin-top: 50px;
+    h3, p {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      line-height: 16px;
     }
   }
 }
+
 
 #videos {
   background: url("../images/bg-videos.png") #fff;
@@ -178,6 +201,7 @@ nav {
   background-size: contain;
   background-position: 0px 70px;
   padding: 50px 0;
+  min-height: 100vh;
   background-repeat: no-repeat;
   h1 {
     font-size: 32px;
@@ -195,10 +219,40 @@ nav {
     }
     .video {
       cursor: pointer;
-      width: 33%;
+      width: 32.1%;
       display: inline-block;
-      padding: 5px;
+      margin: 5px;
       box-sizing: border-box;
+      position: relative;
+      transition: .3s;
+      .overlay {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.8);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        transition: .3s;
+        p {
+          color: #fff;
+          text-align: center;
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translateY(-50%) translateX(-50%);
+        }
+      }
+
+      &:hover {
+        transition: .3s;
+        .overlay {
+          opacity: 1;
+          transition: .3s;
+        }
+      }
       img {
         width: 100%;
       }
@@ -234,7 +288,6 @@ nav {
   background-size: 900px;
   width: 100%;
   position: relative;
-  min-height: 80vh;
   padding-bottom: 100px;
 
   .blocks {
@@ -327,6 +380,15 @@ nav {
 }
 
 @media only screen and (max-width: 1000px){
+  .lightbox {
+    .video {
+      p {
+        height: 500px;
+        font-size: 50px;
+        line-height: 52px;
+      }
+    }
+  }
   nav {
     width: 90%;
     margin: 0 auto;
@@ -350,43 +412,69 @@ nav {
       }
     }
   }
-  #header {
+
+
+  .bg-pegada {
+    background-position: 50px 50%;
+    background-repeat: no-repeat;
     background-size: 2000px;
+
+  }
+
+  #header {
     .logo {
-      width: 500px !important;
-      margin-top: 100px;
+      width: 90% !important;
+      margin-top: 600px;
     }
 
     .blocks {
+      &.n1 {
+        top: 500px;
+      }
+
       &.n2 {
         left: 100px;
+        bottom: 500px;
+        top: inherit;
       }
 
       &.n3 {
         right: 300px;
-        top: 650px;
+        top: inherit;
+        bottom: 350px;
       }
     }
 
-    .about {
-      margin-top: 300px;
-      width: 80%;
 
-      .manifest {
-        margin-top: 250px;
-        margin-left: 0;
-        padding-left: 30px;
+  }
+  #about {
+    padding-top: 400px;
+
+    img {
+      width: 90% !important;
+    }
+
+    .manifest {
+      margin-top: 250px;
+      margin-left: 50px;
+      padding-left: 30px;
+      width: 90%;
+
+
+      p,h3 {
+        font-size: 60px;
+        line-height: 62px;
+        width: 100%;
       }
     }
   }
 
-
   #videos {
     .videos {
       padding: 0 50px;
-
+      padding-left: 30px;
       .video {
-        width: 48.9%;
+        width: 47.9%;
       }
 
       .more {
@@ -399,7 +487,8 @@ nav {
   }
 
   #contact {
-    min-height: inherit;
+    min-height: 100vh;
+    padding-top: 500px;
 
     .info {
       ul.social {
