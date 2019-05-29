@@ -93,8 +93,6 @@ nav {
   background-size: 1200px; }
 
 #header {
-  padding-top: 200px;
-  padding-bottom: 100px;
   box-sizing: border-box;
   width: 100%;
   position: relative;
@@ -117,33 +115,40 @@ nav {
       right: 300px;
       top: 450px; }
   #header .logo {
-    width: 400px;
+    width: 40%;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
 
 #about {
   height: 100vh;
   width: 100%;
   margin: 0 auto;
-  padding-top: 200px;
-  box-sizing: border-box; }
-  #about img {
-    width: 500px;
-    margin: 0 auto;
-    display: block; }
-  #about .manifest {
-    width: 400px;
-    margin: 0 auto;
-    display: block;
-    padding-left: 10px;
-    border-left: 3px solid #fff;
-    color: #e5053d;
-    margin-top: 50px; }
-    #about .manifest h3, #about .manifest p {
-      margin: 0;
-      padding: 0;
-      font-size: 16px;
-      line-height: 16px; }
+  box-sizing: border-box;
+  position: relative; }
+  #about .content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+    #about .content img {
+      width: 40%;
+      margin: 0 auto;
+      display: block; }
+    #about .content .manifest {
+      width: 400px;
+      margin: 0 auto;
+      display: block;
+      padding-left: 10px;
+      border-left: 3px solid #fff;
+      color: #e5053d;
+      margin-top: 50px; }
+      #about .content .manifest h3, #about .content .manifest p {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 16px; }
 
 #videos {
   background: url("../images/bg-videos.png") #fff;
@@ -314,8 +319,7 @@ nav {
     background-size: 2000px; }
 
   #header .logo {
-    width: 90% !important;
-    margin-top: 600px; }
+    width: 90% !important; }
   #header .blocks.n1 {
     top: 500px; }
   #header .blocks.n2 {
@@ -327,19 +331,17 @@ nav {
     top: inherit;
     bottom: 350px; }
 
-  #about {
-    padding-top: 400px; }
-    #about img {
-      width: 90% !important; }
-    #about .manifest {
-      margin-top: 250px;
-      margin-left: 50px;
-      padding-left: 30px;
-      width: 90%; }
-      #about .manifest p, #about .manifest h3 {
-        font-size: 60px;
-        line-height: 62px;
-        width: 100%; }
+  #about .content img {
+    width: 90% !important; }
+  #about .content .manifest {
+    margin-top: 250px;
+    margin-left: 50px;
+    padding-left: 30px;
+    width: 90%; }
+    #about .content .manifest p, #about .content .manifest h3 {
+      font-size: 60px;
+      line-height: 62px;
+      width: 100%; }
 
   #videos .videos {
     padding: 0 50px;

@@ -1,6 +1,6 @@
 let videosArr = [];
 let videosCounter = 0;
-const VIDEOS_NUMBER = $(window).width() > 1000 ? 9 : 8;
+const VIDEOS_NUMBER = $(window).width() > 1000 ? 9 : 12;
 let modalActive = false;
 let currentVideoId;
 $(".videos").on("click", '.video',function(){

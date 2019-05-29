@@ -124,8 +124,6 @@ nav {
 }
 
 #header {
-  padding-top: 200px;
-  padding-bottom: 100px;
   box-sizing: border-box;
   width: 100%;
   position: relative;
@@ -158,9 +156,12 @@ nav {
 
 
   .logo {
-    width: 400px;
+    width: 40%;
     display: block;
     margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
 }
@@ -169,27 +170,32 @@ nav {
   height: 100vh;
   width: 100%;
   margin: 0 auto;
-  padding-top: 200px;
   box-sizing: border-box;
-  img {
-    width: 500px;
-    margin: 0 auto;
-    display: block;
-  }
+  position: relative;
+  .content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    img {
+      width: 40%;
+      margin: 0 auto;
+      display: block;
+    }
 
-  .manifest {
-    width: 400px;
-    margin: 0 auto;
-    display: block;
-    padding-left: 10px;
-    border-left: 3px solid #fff;
-    color: $pink;
-    margin-top: 50px;
-    h3, p {
-      margin: 0;
-      padding: 0;
-      font-size: 16px;
-      line-height: 16px;
+    .manifest {
+      width: 400px;
+      margin: 0 auto;
+      display: block;
+      padding-left: 10px;
+      border-left: 3px solid #fff;
+      color: $pink;
+      margin-top: 50px;
+      h3, p {
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 16px;
+      }
     }
   }
 }
@@ -424,7 +430,6 @@ nav {
   #header {
     .logo {
       width: 90% !important;
-      margin-top: 600px;
     }
 
     .blocks {
@@ -448,23 +453,23 @@ nav {
 
   }
   #about {
-    padding-top: 400px;
+    .content {
+      img {
+        width: 90% !important;
+      }
 
-    img {
-      width: 90% !important;
-    }
-
-    .manifest {
-      margin-top: 250px;
-      margin-left: 50px;
-      padding-left: 30px;
-      width: 90%;
+      .manifest {
+        margin-top: 250px;
+        margin-left: 50px;
+        padding-left: 30px;
+        width: 90%;
 
 
-      p,h3 {
-        font-size: 60px;
-        line-height: 62px;
-        width: 100%;
+        p,h3 {
+          font-size: 60px;
+          line-height: 62px;
+          width: 100%;
+        }
       }
     }
   }
