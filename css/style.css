@@ -18,6 +18,8 @@ html, body {
   margin: 0 auto;
   font-family: NeutraText;
   height: 100%; }
+  html.noscroll, body.noscroll {
+    overflow: hidden; }
   html img, body img {
     user-drag: none;
     user-select: none;
@@ -32,20 +34,17 @@ html, body {
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   z-index: 9999999;
-  display: none; }
+  display: none;
+  overflow-y: scroll; }
   .lightbox .video {
     padding-right: 30px;
-    position: absolute;
-    z-index: 99999999;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%); }
+    width: 768px;
+    margin: 0 auto;
+    margin-top: 50px; }
     .lightbox .video p {
       white-space: pre-line;
       color: #fff;
-      line-height: 18px;
-      height: 100px;
-      overflow-y: scroll; }
+      line-height: 18px; }
   .lightbox .close {
     position: absolute;
     top: 30px;
@@ -62,10 +61,12 @@ nav {
   padding: 10px 0;
   background-color: #000;
   color: #fff;
-  width: 1170px;
+  width: 60.3vw;
   margin: 0 auto;
   position: absolute;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 999; }
   nav ul.menu {
     display: inline-block;
@@ -90,7 +91,7 @@ nav {
   background: url("../images/pegada-bg.png") #000;
   background-position: 50px 30%;
   background-repeat: no-repeat;
-  background-size: 1200px; }
+  background-size: 100%; }
 
 #header {
   box-sizing: border-box;
@@ -100,20 +101,20 @@ nav {
   #header .blocks {
     background-color: #e5053d; }
     #header .blocks.n1 {
-      width: 350px;
+      width: 18vw;
       position: absolute;
       right: 0;
-      top: 100px; }
+      top: 10vh; }
     #header .blocks.n2 {
-      width: 80px;
+      width: 5vw;
       position: absolute;
-      left: 250px;
-      top: 400px; }
+      left: 13vw;
+      top: 37vh; }
     #header .blocks.n3 {
-      width: 180px;
+      width: 9.3vw;
       position: absolute;
-      right: 300px;
-      top: 450px; }
+      right: 15.6vw;
+      top: 41.2vh; }
   #header .logo {
     width: 40%;
     display: block;
@@ -137,13 +138,15 @@ nav {
       margin: 0 auto;
       display: block; }
     #about .content .manifest {
-      width: 400px;
+      width: 350px;
       margin: 0 auto;
       display: block;
       padding-left: 10px;
       border-left: 3px solid #fff;
       color: #e5053d;
-      margin-top: 50px; }
+      margin-top: 50px;
+      left: 1.5%;
+      position: relative; }
       #about .content .manifest h3, #about .content .manifest p {
         margin: 0;
         padding: 0;
@@ -214,40 +217,42 @@ nav {
         background-color: #e5053d;
         line-height: 16px;
         font-size: 16px;
-        padding: 5px 0px;
+        padding: 10px 0px;
         width: 100%;
         display: block;
         color: #fff; }
 
 #contact {
-  min-height: 100vh;
+  height: 100vh;
   box-sizing: border-box;
   background: url("../images/contact-bg.png") #e5053d;
   background-position: 50px bottom;
   background-repeat: no-repeat;
-  background-size: 900px;
+  background-size: 80%;
   width: 100%;
-  position: relative;
-  padding-bottom: 100px; }
+  position: relative; }
   #contact .blocks {
     background-color: #000; }
     #contact .blocks.n1 {
-      width: 150px;
+      width: 7.8vw;
       position: absolute;
-      left: 250px;
-      top: 100px; }
+      left: 13vw;
+      top: 9.3vh; }
     #contact .blocks.n2 {
-      width: 50px;
+      width: 2.6vw;
       position: absolute;
-      right: 250px;
-      top: 300px; }
+      right: 13vw;
+      top: 27.8vh; }
     #contact .blocks.n3 {
-      width: 180px;
+      width: 9.4vw;
       position: absolute;
-      right: 300px;
-      top: 450px; }
+      right: 15.6vw;
+      top: 41.7vh; }
   #contact .info {
-    padding-top: 150px; }
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
     #contact .info h2 {
       font-size: 20px;
       line-height: 22px;
@@ -311,7 +316,7 @@ nav {
         font-size: 30px;
         line-height: 65px; }
     nav ul.social li a img {
-      height: 50px; }
+      height: 60px; }
 
   .bg-pegada {
     background-position: 50px 50%;
@@ -343,9 +348,10 @@ nav {
       line-height: 62px;
       width: 100%; }
 
+  #videos h1 {
+    font-size: 50px; }
   #videos .videos {
-    padding: 0 50px;
-    padding-left: 30px; }
+    padding: 0 50px; }
     #videos .videos .video {
       width: 47.9%; }
     #videos .videos .more a {
@@ -354,12 +360,24 @@ nav {
 
   #contact {
     min-height: 100vh;
-    padding-top: 500px; }
+    position: relative; }
+    #contact .info h2 {
+      font-size: 40px;
+      line-height: 44px; }
+    #contact .info h3 {
+      font-size: 32px;
+      line-height: 36px; }
+    #contact .info h1 {
+      font-size: 76px;
+      line-height: 80px; }
+    #contact .info a {
+      font-size: 30px;
+      line-height: 34px; }
     #contact .info ul.social {
       width: 250px; }
       #contact .info ul.social li {
         margin: 0 10px; }
         #contact .info ul.social li img {
-          width: 50px; } }
+          width: 60px; } }
 
 /*# sourceMappingURL=style.css.map */

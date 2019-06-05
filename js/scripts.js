@@ -11,6 +11,7 @@ $(".videos").on("click", '.video',function(){
 
 function renderVideo(id){
   $(".lightbox").hide();
+  $("body").addClass("noscroll");
   $(".lightbox .video").html("");
   $(".lightbox .video").html(videosArr[id].embed);
   $(".lightbox .video").append("<p>"+ videosArr[id].description +"</p>")
@@ -82,6 +83,7 @@ function closeModal(){
   $(".lightbox .video").html("");
   $(".lightbox").hide();
   modalActive = false;
+  $("body").removeClass("noscroll");
 }
 
 async function getVideosIds(){

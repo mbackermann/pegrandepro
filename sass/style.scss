@@ -29,6 +29,10 @@ html, body {
   font-family: NeutraText;
   height: 100%;
 
+  &.noscroll {
+    overflow: hidden;
+  }
+
   img {
     user-drag: none;
     user-select: none;
@@ -47,20 +51,17 @@ html, body {
   position: fixed;
   z-index: 9999999;
   display: none;
+  overflow-y: scroll;
 
   .video {
     padding-right: 30px;
-    position: absolute;
-    z-index: 99999999;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    width: 768px;
+    margin: 0 auto;
+    margin-top: 50px;
     p {
       white-space: pre-line;
       color: #fff;
       line-height: 18px;
-      height: 100px;
-      overflow-y: scroll;
     }
   }
 
@@ -83,10 +84,12 @@ nav {
   padding: 10px 0;
   background-color: #000;
   color: #fff;
-  width: 1170px;
+  width: 60.3vw;
   margin: 0 auto;
   position: absolute;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 999;
 
   ul.menu {
@@ -120,7 +123,7 @@ nav {
   background: url('../images/pegada-bg.png') #000;
   background-position: 50px 30%;
   background-repeat: no-repeat;
-  background-size: 1200px;
+  background-size: 100%;
 }
 
 #header {
@@ -133,23 +136,23 @@ nav {
     background-color: $pink;
 
     &.n1 {
-      width: 350px;
+      width: 18vw;
       position: absolute;
       right: 0;
-      top: 100px;
+      top: 10vh;
     }
 
     &.n2 {
-      width: 80px;
+      width: 5vw;
       position: absolute;
-      left: 250px;
-      top: 400px;
+      left: 13vw;
+      top: 37vh;
     }
     &.n3 {
-      width: 180px;
+      width: 9.3vw;
       position: absolute;
-      right: 300px;
-      top: 450px;
+      right: 15.6vw;
+      top: 41.2vh;
     }
 
   }
@@ -183,13 +186,15 @@ nav {
     }
 
     .manifest {
-      width: 400px;
+      width: 350px;
       margin: 0 auto;
       display: block;
       padding-left: 10px;
       border-left: 3px solid #fff;
       color: $pink;
       margin-top: 50px;
+      left: 1.5%;
+      position: relative;
       h3, p {
         margin: 0;
         padding: 0;
@@ -276,7 +281,7 @@ nav {
         background-color: $pink;
         line-height: 16px;
         font-size: 16px;
-        padding: 5px 0px;
+        padding: 10px 0px;
         width: 100%;
         display: block;
         color: #fff;
@@ -286,42 +291,44 @@ nav {
 }
 
 #contact {
-  min-height: 100vh;
+  height: 100vh;
   box-sizing: border-box;
   background: url('../images/contact-bg.png') $pink;
   background-position: 50px bottom;
   background-repeat: no-repeat;
-  background-size: 900px;
+  background-size: 80%;
   width: 100%;
   position: relative;
-  padding-bottom: 100px;
 
   .blocks {
     background-color: #000;
 
     &.n1 {
-      width: 150px;
+      width: 7.8vw;
       position: absolute;
-      left: 250px;
-      top: 100px;
+      left: 13vw;
+      top: 9.3vh;
     }
 
     &.n2 {
-      width: 50px;
+      width: 2.6vw;
       position: absolute;
-      right: 250px;
-      top: 300px;
+      right: 13vw;
+      top: 27.8vh;
     }
     &.n3 {
-      width: 180px;
+      width: 9.4vw;
       position: absolute;
-      right: 300px;
-      top: 450px;
+      right: 15.6vw;
+      top: 41.7vh;
     }
 
   }
   .info {
-    padding-top: 150px;
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     h2 {
       font-size: 20px;
       line-height: 22px;
@@ -412,7 +419,7 @@ nav {
       li {
         a {
           img {
-            height: 50px;
+            height: 60px;
           }
         }
       }
@@ -475,9 +482,12 @@ nav {
   }
 
   #videos {
+    h1 {
+      font-size: 50px;
+
+    }
     .videos {
       padding: 0 50px;
-      padding-left: 30px;
       .video {
         width: 47.9%;
       }
@@ -493,15 +503,36 @@ nav {
 
   #contact {
     min-height: 100vh;
-    padding-top: 500px;
+    position: relative;
+
 
     .info {
+
+      h2 {
+        font-size: 40px;
+        line-height: 44px;
+      }
+
+      h3 {
+        font-size: 32px;
+        line-height: 36px;
+      }
+
+      h1 {
+        font-size: 76px;
+        line-height: 80px;
+      }
+
+      a {
+        font-size: 30px;
+        line-height: 34px;
+      }
       ul.social {
         width: 250px;
         li {
           margin: 0 10px;
           img {
-            width: 50px;
+            width: 60px;
           }
         }
       }
