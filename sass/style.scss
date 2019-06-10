@@ -84,7 +84,7 @@ nav {
   padding: 10px 0;
   background-color: #000;
   color: #fff;
-  width: 60.3vw;
+  width: 80vw;
   margin: 0 auto;
   position: absolute;
   top: 0;
@@ -136,30 +136,31 @@ nav {
     background-color: $pink;
 
     &.n1 {
-      width: 18vw;
+      width: 25vw;
       position: absolute;
       right: 0;
-      top: 10vh;
+      top: 20vh;
     }
 
     &.n2 {
       width: 5vw;
       position: absolute;
-      left: 13vw;
-      top: 37vh;
+      left: 19vw;
+      top: 70vh;
+      padding: 15px 10px;
     }
     &.n3 {
-      width: 9.3vw;
+      width: 15vw;
       position: absolute;
-      right: 15.6vw;
-      top: 41.2vh;
+      right: 22vw;
+      top: 80vh;
     }
 
   }
 
 
   .logo {
-    width: 40%;
+    width: 33.333%;
     display: block;
     margin: 0 auto;
     position: relative;
@@ -210,10 +211,15 @@ nav {
   background: url("../images/bg-videos.png") #fff;
   box-sizing: border-box;
   background-size: contain;
+  padding: 30px 0;
   background-position: 0px 70px;
-  padding: 50px 0;
   min-height: 100vh;
   background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   h1 {
     font-size: 32px;
     line-height: 32px;
@@ -222,17 +228,17 @@ nav {
   }
 
   .videos {
-    padding: 0 200px;
-    margin-top: 30px;
+    width: 63%;
+    margin: 0 auto;
     h3 {
       color: $pink;
       text-align: center;
     }
     .video {
       cursor: pointer;
-      width: 32.1%;
+      width: 32%;
       display: inline-block;
-      margin: 5px;
+      margin: 0.25vw;
       box-sizing: border-box;
       position: relative;
       transition: .3s;
@@ -313,13 +319,13 @@ nav {
     &.n2 {
       width: 2.6vw;
       position: absolute;
-      right: 13vw;
-      top: 27.8vh;
+      right: 11vw;
+      top: 41.8vh;
     }
     &.n3 {
       width: 9.4vw;
       position: absolute;
-      right: 15.6vw;
+      right: 12.6vw;
       top: 41.7vh;
     }
 
@@ -330,8 +336,8 @@ nav {
     top: 50%;
     transform: translateY(-50%);
     h2 {
-      font-size: 20px;
-      line-height: 22px;
+      font-size: 40px;
+      line-height: 42px;
       font-weight: 400;
       margin: 0;
       color: #000;
@@ -340,8 +346,8 @@ nav {
     }
 
     h3 {
-      font-size: 16px;
-      line-height: 18px;
+      font-size: 32px;
+      line-height: 36px;
       font-weight: normal;
       margin: 0;
       text-transform: uppercase;
@@ -350,8 +356,8 @@ nav {
 
     h1 {
       text-align: center;
-      font-size: 38px;
-      line-height: 40px;
+      font-size: 58px;
+      line-height: 62px;
       display: block;
       margin-top: 50px;
     }
@@ -402,24 +408,27 @@ nav {
       }
     }
   }
+
   nav {
     width: 90%;
     margin: 0 auto;
     ul.menu {
-      height: 65px;
+      height: 7.7vw;
       li {
+
         a {
-          font-size: 30px;
-          line-height: 65px;
+          font-size: 2.5vw;
+          line-height: 7.7vw;
         }
       }
     }
 
     ul.social {
+      padding-left: 0;
       li {
         a {
           img {
-            height: 60px;
+            height: 6vw;
           }
         }
       }
@@ -427,33 +436,35 @@ nav {
   }
 
 
+
+
   .bg-pegada {
     background-position: 50px 50%;
     background-repeat: no-repeat;
-    background-size: 2000px;
+    background-size: 185vw;
 
   }
 
   #header {
     .logo {
-      width: 90% !important;
+      width: 80% !important;
     }
 
     .blocks {
       &.n1 {
-        top: 500px;
+        top: 19vh;
       }
 
       &.n2 {
-        left: 100px;
-        bottom: 500px;
-        top: inherit;
+        left: 10vh;
+        top: 30vh;
+        bottom: inherit;
       }
 
       &.n3 {
-        right: 300px;
+        right: 22vh;
         top: inherit;
-        bottom: 350px;
+        bottom: 15vh;
       }
     }
 
@@ -494,8 +505,8 @@ nav {
 
       .more {
         a {
-          font-size: 40px;
-          line-height: 42px;
+          font-size: 3vw;
+          line-height: 3.2vw;
         }
       }
     }
@@ -509,23 +520,23 @@ nav {
     .info {
 
       h2 {
-        font-size: 40px;
-        line-height: 44px;
+        font-size: 4vh;
+        line-height: 4.1vh;
       }
 
       h3 {
-        font-size: 32px;
-        line-height: 36px;
+        font-size: 2.5vh;
+        line-height: 2.6vh;
       }
 
       h1 {
-        font-size: 76px;
-        line-height: 80px;
+        font-size: 5vh;
+        line-height: 5.1vh;
       }
 
       a {
-        font-size: 30px;
-        line-height: 34px;
+        font-size: 2vh;
+        line-height: 2.1vh;
       }
       ul.social {
         width: 250px;
@@ -540,3 +551,73 @@ nav {
   }
 }
 
+@media only screen and (max-width: 1100px){
+  #videos {
+    .videos {
+      width: 80%;
+    }
+  }
+
+}
+
+@media only screen and (max-width: 768px){
+  nav {
+    width: 90%;
+    margin: 0 auto;
+    ul.menu {
+      height: 7.7vw;
+      li {
+
+        a {
+          font-size: 2.5vw;
+          line-height: 7.7vw;
+        }
+      }
+    }
+
+    ul.social {
+      padding-left: 0;
+      li {
+        a {
+          img {
+            height: 6vw;
+          }
+        }
+      }
+    }
+  }
+
+  #contact {
+    .info {
+      h2 {
+        font-size: 32px;
+        line-height: 36px;
+      }
+
+      h3 {
+        font-size: 18px;
+        line-height: 22px;
+      }
+
+      h1 {
+        font-size: 46px;
+        line-height: 50px;
+      }
+
+      a {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+
+    ul {
+      li {
+        img {
+          width: 40px !important;
+        }
+      }
+    }
+  }
+
+
+}

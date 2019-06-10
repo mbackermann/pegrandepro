@@ -158,31 +158,26 @@ nav {
   background: url("../images/bg-videos.png") #fff;
   box-sizing: border-box;
   background-size: contain;
-  padding: 30px 0;
   background-position: 0px 70px;
+  padding: 50px 0;
   min-height: 100vh;
-  background-repeat: no-repeat;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; }
+  background-repeat: no-repeat; }
   #videos h1 {
     font-size: 32px;
     line-height: 32px;
     color: #e5053d;
     text-align: center; }
   #videos .videos {
-    width: 63%;
-    margin: 0 auto; }
+    padding: 0 200px;
+    margin-top: 30px; }
     #videos .videos h3 {
       color: #e5053d;
       text-align: center; }
     #videos .videos .video {
       cursor: pointer;
-      width: 32%;
+      width: 32.1%;
       display: inline-block;
-      margin: 0.25vw;
+      margin: 5px;
       box-sizing: border-box;
       position: relative;
       transition: .3s; }
@@ -247,12 +242,12 @@ nav {
     #contact .blocks.n2 {
       width: 2.6vw;
       position: absolute;
-      right: 11vw;
-      top: 41.8vh; }
+      right: 13vw;
+      top: 27.8vh; }
     #contact .blocks.n3 {
       width: 9.4vw;
       position: absolute;
-      right: 12.6vw;
+      right: 15.6vw;
       top: 41.7vh; }
   #contact .info {
     display: block;
@@ -260,24 +255,24 @@ nav {
     top: 50%;
     transform: translateY(-50%); }
     #contact .info h2 {
-      font-size: 40px;
-      line-height: 42px;
+      font-size: 20px;
+      line-height: 22px;
       font-weight: 400;
       margin: 0;
       color: #000;
       text-transform: uppercase;
       text-align: center; }
     #contact .info h3 {
-      font-size: 32px;
-      line-height: 36px;
+      font-size: 16px;
+      line-height: 18px;
       font-weight: normal;
       margin: 0;
       text-transform: uppercase;
       text-align: center; }
     #contact .info h1 {
       text-align: center;
-      font-size: 58px;
-      line-height: 62px;
+      font-size: 38px;
+      line-height: 40px;
       display: block;
       margin-top: 50px; }
     #contact .info a {
@@ -307,7 +302,7 @@ nav {
         #contact .info ul.social li img {
           width: 30px; }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 768px) {
   .lightbox .video p {
     height: 500px;
     font-size: 50px;
@@ -317,32 +312,30 @@ nav {
     width: 90%;
     margin: 0 auto; }
     nav ul.menu {
-      height: 7.7vw; }
+      height: 65px; }
       nav ul.menu li a {
-        font-size: 2.5vw;
-        line-height: 7.7vw; }
-    nav ul.social {
-      padding-left: 0; }
-      nav ul.social li a img {
-        height: 6vw; }
+        font-size: 1vw;
+        line-height: 65px; }
+    nav ul.social li a img {
+      height: 60px; }
 
   .bg-pegada {
     background-position: 50px 50%;
     background-repeat: no-repeat;
-    background-size: 185vw; }
+    background-size: 2000px; }
 
   #header .logo {
-    width: 80% !important; }
+    width: 90% !important; }
   #header .blocks.n1 {
-    top: 19vh; }
+    top: 500px; }
   #header .blocks.n2 {
-    left: 10vh;
-    top: 30vh;
-    bottom: inherit; }
+    left: 100px;
+    bottom: 500px;
+    top: inherit; }
   #header .blocks.n3 {
-    right: 22vh;
+    right: 300px;
     top: inherit;
-    bottom: 15vh; }
+    bottom: 350px; }
 
   #about .content img {
     width: 90% !important; }
@@ -363,60 +356,29 @@ nav {
     #videos .videos .video {
       width: 47.9%; }
     #videos .videos .more a {
-      font-size: 3vw;
-      line-height: 3.2vw; }
+      font-size: 40px;
+      line-height: 42px; }
 
   #contact {
     min-height: 100vh;
     position: relative; }
     #contact .info h2 {
-      font-size: 4vh;
-      line-height: 4.1vh; }
+      font-size: 40px;
+      line-height: 44px; }
     #contact .info h3 {
-      font-size: 2.5vh;
-      line-height: 2.6vh; }
+      font-size: 32px;
+      line-height: 36px; }
     #contact .info h1 {
-      font-size: 5vh;
-      line-height: 5.1vh; }
+      font-size: 76px;
+      line-height: 80px; }
     #contact .info a {
-      font-size: 2vh;
-      line-height: 2.1vh; }
+      font-size: 30px;
+      line-height: 34px; }
     #contact .info ul.social {
       width: 250px; }
       #contact .info ul.social li {
         margin: 0 10px; }
         #contact .info ul.social li img {
           width: 60px; } }
-@media only screen and (max-width: 1100px) {
-  #videos .videos {
-    width: 80%; } }
-@media only screen and (max-width: 768px) {
-  nav {
-    width: 90%;
-    margin: 0 auto; }
-    nav ul.menu {
-      height: 7.7vw; }
-      nav ul.menu li a {
-        font-size: 2.5vw;
-        line-height: 7.7vw; }
-    nav ul.social {
-      padding-left: 0; }
-      nav ul.social li a img {
-        height: 6vw; }
 
-  #contact .info h2 {
-    font-size: 32px;
-    line-height: 36px; }
-  #contact .info h3 {
-    font-size: 18px;
-    line-height: 22px; }
-  #contact .info h1 {
-    font-size: 46px;
-    line-height: 50px; }
-  #contact .info a {
-    font-size: 18px;
-    line-height: 22px; }
-  #contact ul li img {
-    width: 40px !important; } }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style:css.map */
