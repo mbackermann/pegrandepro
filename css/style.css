@@ -58,16 +58,18 @@ html, body {
   padding: 10px 0px; }
 
 nav {
-  padding: 10px 0;
   background-color: #000;
-  color: #fff;
-  width: 80vw;
-  margin: 0 auto;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 999; }
+  z-index: 999;
+  width: 100%; }
+  nav .nav {
+    padding: 10px 0;
+    color: #fff;
+    width: 80vw;
+    margin: 0 auto; }
   nav ul.menu {
     display: inline-block;
     height: 30px; }
@@ -155,11 +157,11 @@ nav {
         line-height: 16px; }
 
 #videos {
-  background: url("../images/bg-videos.png") #fff;
+  background: url("../images/bg-videos-2.png") #fff;
   box-sizing: border-box;
   background-size: contain;
   padding: 30px 0;
-  background-position: 0px 70px;
+  background-position: right center;
   min-height: 100vh;
   background-repeat: no-repeat;
   position: relative;
@@ -260,27 +262,28 @@ nav {
     top: 50%;
     transform: translateY(-50%); }
     #contact .info h2 {
-      font-size: 40px;
-      line-height: 42px;
+      font-size: 36px;
+      line-height: 40px;
       font-weight: 400;
       margin: 0;
       color: #000;
       text-transform: uppercase;
       text-align: center; }
     #contact .info h3 {
-      font-size: 32px;
-      line-height: 36px;
+      font-size: 28px;
+      line-height: 32px;
       font-weight: normal;
       margin: 0;
       text-transform: uppercase;
       text-align: center; }
     #contact .info h1 {
       text-align: center;
-      font-size: 58px;
-      line-height: 62px;
+      font-size: 54px;
+      line-height: 58px;
       display: block;
       margin-top: 50px; }
     #contact .info a {
+      font-size: 20px;
       text-align: center;
       color: #fff;
       display: block;
@@ -370,17 +373,17 @@ nav {
     min-height: 100vh;
     position: relative; }
     #contact .info h2 {
-      font-size: 4vh;
-      line-height: 4.1vh; }
+      font-size: 3.8vh;
+      line-height: 3.9vh; }
     #contact .info h3 {
-      font-size: 2.5vh;
-      line-height: 2.6vh; }
+      font-size: 2.3vh;
+      line-height: 2.4vh; }
     #contact .info h1 {
-      font-size: 5vh;
-      line-height: 5.1vh; }
+      font-size: 4.9vh;
+      line-height: 5vh; }
     #contact .info a {
-      font-size: 2vh;
-      line-height: 2.1vh; }
+      font-size: 2.1vh;
+      line-height: 2.2vh; }
     #contact .info ul.social {
       width: 250px; }
       #contact .info ul.social li {
