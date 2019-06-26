@@ -624,7 +624,7 @@ nav {
   }
 }
 
-@media screen and (orientation:landscape) {
+@media only screen and (orientation:landscape) and (max-width: 1000px){
   #header {
     img.logo {
       margin-top: 1vw;
