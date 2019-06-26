@@ -88,7 +88,7 @@ nav {
     margin: 0 auto;
   }
   background-color: #000;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -215,7 +215,7 @@ nav {
   box-sizing: border-box;
   background-size: contain;
   padding: 30px 0;
-  background-position: right center;
+  background-position: right top;
   min-height: 100vh;
   background-repeat: no-repeat;
   position: relative;
@@ -224,8 +224,8 @@ nav {
   justify-content: center;
   align-items: center;
   h1 {
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 54px;
+    line-height: 58px;
     color: $pink;
     text-align: center;
   }
@@ -323,7 +323,7 @@ nav {
       width: 2.6vw;
       position: absolute;
       right: 11vw;
-      top: 41.8vh;
+      top: 52.8vh;
     }
     &.n3 {
       width: 9.4vw;
@@ -622,6 +622,24 @@ nav {
       }
     }
   }
+}
 
+@media screen and (orientation:landscape) {
+  #header {
+    img.logo {
+      margin-top: 1vw;
+      height: 50%;
+      width: auto !important;
+    }
+  }
 
+  #about {
+    .content {
+      height: 100% !important;
+      img {
+        height: 80%;
+        width: auto !important;
+      }
+    }
+  }
 }
